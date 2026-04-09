@@ -13,7 +13,7 @@ use ostree::{
 };
 
 pub const APP_SUFFIXES: [&str; 3] = ["Sources", "Debug", "Locale"];
-pub const APPID_SKIPLIST: [&str; 8] = [
+pub const APPID_SKIPLIST: [&str; 10] = [
     "net.wz2100.wz2100",
     "org.freedesktop.Platform.ClInfo",
     "org.freedesktop.Platform.GlxInfo",
@@ -22,6 +22,8 @@ pub const APPID_SKIPLIST: [&str; 8] = [
     "org.freedesktop.Platform.VulkanInfo",
     "org.mozilla.Thunderbird",
     "org.mozilla.firefox",
+    "org.mozilla.thunderbird",
+    "org.mozilla.thunderbird_esr",
 ];
 
 pub fn app_id_from_ref(refstring: &str) -> String {
